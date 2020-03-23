@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Suspense, lazy } from 'react';
+import { Router } from '@reach/router';
+import { Navbar, Header } from './components';
 import './App.css';
 
-function App() {
+const LandingPage = lazy(() => import('./containers/LandingPage'));
+const Quiz = lazy(() => import('./containers/Quiz'));
+const Omoss = lazy(() => import('./containers/Omoss'));
+
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Suspense fallback={<h1>Laster...</h1>}>
+      <Header />
+      <Navbar />
+      <Router>
+        <LandingPage path="/" />
+        <Quiz path="/quiz" />
+        <Omoss path="/omoss" />
+      </Router>
+    </Suspense>
   );
 }
 
