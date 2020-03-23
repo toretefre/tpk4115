@@ -5,7 +5,7 @@ import './App.css';
 
 const LandingPage = lazy(() => import('./containers/LandingPage'));
 const Quiz = lazy(() => import('./containers/QuizPage'));
-const Omoss = lazy(() => import('./containers/Omoss'));
+const Omoss = lazy(() => import('./containers/OmossPage'));
 
 export const App = () => {
   return (
