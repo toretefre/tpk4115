@@ -9,11 +9,13 @@ export const Quiz = () => {
         correct: ["Riktig svar"],
         wrong: ["Feil svar", "hvertfall feil svar", "veldig feil svar"],
     })
+    const [answerText, setAnswerText] = useState("");
 
     const [progress, setProgress] = useState({
         answeredQuestions: 0,
         correctQuestions: 0,
         wrongQuestions: 0,
+        answered: false,
     })
 
     const handleCategoryChange = event => {
@@ -25,17 +27,37 @@ export const Quiz = () => {
             setProgress({
                 answeredQuestions: progress.answeredQuestions += 1,
                 correctQuestions: progress.correctQuestions += 1,
+                answered: true,
                 ...progress
             })
+            setAnswerText(`Riktig! Riktig(e) svar er ${currentQuestion.correct}`)
         }
 
         if (event.target.value !== "correct") {
             setProgress({
                 answeredQuestions: progress.answeredQuestions += 1,
                 wrongQuestions: progress.wrongQuestions += 1,
+                answered: true,
                 ...progress
             })
+            setAnswerText(`Feil! Riktig(e) svar ville vært ${currentQuestion.correct}`)
         }
+    }
+
+    const handleNewQuestion = () => {
+        setNewQuestion();
+    }
+
+    const setNewQuestion = () => {
+        setProgress({
+            answered: false,
+            ...progress
+        });
+        setCurrentQuestion({
+            text: "Mumbo",
+            correct: ["mumboja"],
+            wrong: ["feil", "veldig feil"]
+        });
     }
 
     console.log(questions);
@@ -56,6 +78,9 @@ export const Quiz = () => {
             {currentQuestion.wrong.map(alternative =>
                 <button value={"wrong"} onClick={handleAnswer}>{alternative}</button>
             )}
+
+            <h3>{answerText}</h3>
+            <button onClick={handleNewQuestion}>Neste spørsmål</button>
 
             <p>Du har svart riktig på {progress.correctQuestions} av {progress.answeredQuestions} spørsmål.</p>
         </Fragment >
