@@ -25,20 +25,20 @@ export const Quiz = () => {
     const handleAnswer = event => {
         if (event.target.value === "correct") {
             setProgress({
+                ...progress,
                 answeredQuestions: progress.answeredQuestions += 1,
                 correctQuestions: progress.correctQuestions += 1,
                 answered: true,
-                ...progress
             })
             setAnswerText(`Riktig! Riktig(e) svar er ${currentQuestion.correct}`)
         }
 
         if (event.target.value !== "correct") {
             setProgress({
+                ...progress,
                 answeredQuestions: progress.answeredQuestions += 1,
                 wrongQuestions: progress.wrongQuestions += 1,
                 answered: true,
-                ...progress
             })
             setAnswerText(`Feil! Riktig(e) svar ville vært ${currentQuestion.correct}`)
         }
@@ -50,8 +50,8 @@ export const Quiz = () => {
 
     const setNewQuestion = () => {
         setProgress({
+            ...progress,
             answered: false,
-            ...progress
         });
         setCurrentQuestion({
             text: "Mumbo",
@@ -72,10 +72,10 @@ export const Quiz = () => {
             </select>
 
             <h3>{currentQuestion.text}</h3>
-            {currentQuestion.correct.map(alternative =>
+            {progress.answered === false && currentQuestion.correct.map(alternative =>
                 <button value={"correct"} onClick={handleAnswer}>{alternative}</button>
             )}
-            {currentQuestion.wrong.map(alternative =>
+            {progress.answered === false && currentQuestion.wrong.map(alternative =>
                 <button value={"wrong"} onClick={handleAnswer}>{alternative}</button>
             )}
 
