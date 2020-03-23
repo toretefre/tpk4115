@@ -4,7 +4,7 @@ import { Navbar, Header } from './components';
 import './App.css';
 
 const LandingPage = lazy(() => import('./containers/LandingPage'));
-const Quiz = lazy(() => import('./containers/Quiz'));
+const Quiz = lazy(() => import('./containers/QuizPage'));
 const Omoss = lazy(() => import('./containers/Omoss'));
 
 export const App = () => {

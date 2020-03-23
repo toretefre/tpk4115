@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-export const Omoss = () => {
+export const OmossPage = () => {
     return (
         <Fragment>
             <h3>
@@ -19,7 +19,7 @@ export const Omoss = () => {
                 For å kjøpe læreboken i faget "Veien til suksess" av Bassahm
                 Hussein
                     <a href="https://www.akademika.no/veien-til-suksess/hussein-bassam/9788245020724"><button
-                    class="dropbtn">trykk her</button></a>
+                    className="dropbtn">trykk her</button></a>
 
             </p>
 
@@ -30,4 +30,4 @@ export const Omoss = () => {
     )
 }
 
-export default Omoss;
+export default OmossPage;
