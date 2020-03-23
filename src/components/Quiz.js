@@ -4,6 +4,11 @@ import * as jsonQuestions from './../questions.json'
 export const Quiz = () => {
     const [category, setCategory] = useState("random");
     const [questions, setQuestions] = useState(jsonQuestions.default);
+    const [currentQuestion, setCurrentQuestion] = useState({
+        text: "Hva er riktig svar?",
+        correct: ["Riktig svar"],
+        wrong: ["Feil svar", "hvertfall feil svar", "veldig feil svar"],
+    })
 
     const [progress, setProgress] = useState({
         answeredQuestions: [],
@@ -15,6 +20,8 @@ export const Quiz = () => {
         setCategory(event.target.value);
     }
 
+    const alternatives = currentQuestion.correct.concat(currentQuestion.wrong);
+
     console.log(questions);
     return (
         <Fragment>
@@ -25,9 +32,13 @@ export const Quiz = () => {
                 <option value="2">Kapittel 2</option>
                 <option value="3">Kapittel 3</option>
             </select>
-            {
-                <p>Du har svart riktig på {progress.correctQuestions.length} av {progress.answeredQuestions.length} spørsmål.</p>
-            }
+
+            <h3>{currentQuestion.text}</h3>
+            {alternatives.map(alternative =>
+                <button>{alternative}</button>
+            )}
+
+            <p>Du har svart riktig på {progress.correctQuestions.length} av {progress.answeredQuestions.length} spørsmål.</p>
         </Fragment >
     )
 }
