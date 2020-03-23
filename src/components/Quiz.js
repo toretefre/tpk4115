@@ -3,7 +3,7 @@ import * as jsonQuestions from './../questions.json'
 
 export const Quiz = () => {
     const [category, setCategory] = useState("random");
-    const [questions, setQuestions] = useState(jsonQuestions);
+    const [questions, setQuestions] = useState(jsonQuestions.default);
 
     const [progress, setProgress] = useState({
         answeredQuestions: [],
@@ -11,17 +11,23 @@ export const Quiz = () => {
         wrongQuestions: [],
     })
 
-    console.log(jsonQuestions);
+    const handleCategoryChange = event => {
+        setCategory(event.target.value);
+    }
+
+    console.log(questions);
     return (
         <Fragment>
-            <select value={category} onChange={setCategory}>
+            <h2>Kategori:</h2>
+            <select value={category} onChange={handleCategoryChange}>
                 <option value="random">Tilfeldige spørsmål</option>
                 <option value="1">Kapittel 1</option>
                 <option value="2">Kapittel 2</option>
                 <option value="3">Kapittel 3</option>
             </select>
-            {progress.answeredQuestions.length > 0 &&
-                <p>Du har svart riktig på {progress.correctQuestions.length} av {progress.answeredQuestions.length} spørsmål.</p>}
+            {
+                <p>Du har svart riktig på {progress.correctQuestions.length} av {progress.answeredQuestions.length} spørsmål.</p>
+            }
         </Fragment >
     )
 }
