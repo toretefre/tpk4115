@@ -11,16 +11,32 @@ export const Quiz = () => {
     })
 
     const [progress, setProgress] = useState({
-        answeredQuestions: [],
-        correctQuestions: [],
-        wrongQuestions: [],
+        answeredQuestions: 0,
+        correctQuestions: 0,
+        wrongQuestions: 0,
     })
 
     const handleCategoryChange = event => {
         setCategory(event.target.value);
     }
 
-    const alternatives = currentQuestion.correct.concat(currentQuestion.wrong);
+    const handleAnswer = event => {
+        if (event.target.value === "correct") {
+            setProgress({
+                answeredQuestions: progress.answeredQuestions += 1,
+                correctQuestions: progress.correctQuestions += 1,
+                ...progress
+            })
+        }
+
+        if (event.target.value !== "correct") {
+            setProgress({
+                answeredQuestions: progress.answeredQuestions += 1,
+                wrongQuestions: progress.wrongQuestions += 1,
+                ...progress
+            })
+        }
+    }
 
     console.log(questions);
     return (
@@ -34,11 +50,14 @@ export const Quiz = () => {
             </select>
 
             <h3>{currentQuestion.text}</h3>
-            {alternatives.map(alternative =>
-                <button>{alternative}</button>
+            {currentQuestion.correct.map(alternative =>
+                <button value={"correct"} onClick={handleAnswer}>{alternative}</button>
+            )}
+            {currentQuestion.wrong.map(alternative =>
+                <button value={"wrong"} onClick={handleAnswer}>{alternative}</button>
             )}
 
-            <p>Du har svart riktig på {progress.correctQuestions.length} av {progress.answeredQuestions.length} spørsmål.</p>
+            <p>Du har svart riktig på {progress.correctQuestions} av {progress.answeredQuestions} spørsmål.</p>
         </Fragment >
     )
 }
