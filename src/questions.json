@@ -1,0 +1,38 @@
+[
+    {
+        "category": 0,
+        "questionText": "Hva er 2+2?",
+        "correctAnswers": [
+            "4"
+        ],
+        "wrongAnswers": [
+            "2",
+            "3",
+            "5"
+        ]
+    },
+    {
+        "category": 0,
+        "questionText": "Hva er 10+10?",
+        "correctAnswers": [
+            "20"
+        ],
+        "wrongAnswers": [
+            "2",
+            "3",
+            "5"
+        ]
+    },
+    {
+        "category": 1,
+        "questionText": "Hva er 69+69?",
+        "correctAnswers": [
+            "138"
+        ],
+        "wrongAnswers": [
+            "4",
+            "420",
+            "5"
+        ]
+    }
+]

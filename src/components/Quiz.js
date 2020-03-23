@@ -1,29 +1,28 @@
 import React, { Fragment, useState } from 'react';
+import * as jsonQuestions from './../questions.json'
 
 export const Quiz = () => {
-    const [questionText, setQuestionText] = useState("Eksempelspørsmål");
-    const [correctAnswers, setCorrectAnswers] = useState(["Et riktig alternativ", "Enda et riktig alternativ"]);
-    const [wrongAnswers, setWrongAnswers] = useState(["Et feil alternativ", "et veldig feil alternativ"])
-    const [scores, setScores] = useState({
-        answered: 0,
-        correct: 0,
+    const [category, setCategory] = useState("random");
+    const [questions, setQuestions] = useState(jsonQuestions);
+
+    const [progress, setProgress] = useState({
+        answeredQuestions: [],
+        correctQuestions: [],
+        wrongQuestions: [],
     })
 
-
-    const alternatives = wrongAnswers.concat(correctAnswers);
-    console.log(alternatives)
-
+    console.log(jsonQuestions);
     return (
         <Fragment>
-            <h2>{questionText}</h2>
-            {alternatives.map(alternative =>
-                <button>{alternative}</button>
-            )}
-
-            <h3>Din statistikk</h3>
-
-            {scores.answered > 0 && <p>Du har svart riktig på {scores.correct} av {scores.answered} spørsmål.</p>}
-        </Fragment>
+            <select value={category} onChange={setCategory}>
+                <option value="random">Tilfeldige spørsmål</option>
+                <option value="1">Kapittel 1</option>
+                <option value="2">Kapittel 2</option>
+                <option value="3">Kapittel 3</option>
+            </select>
+            {progress.answeredQuestions.length > 0 &&
+                <p>Du har svart riktig på {progress.correctQuestions.length} av {progress.answeredQuestions.length} spørsmål.</p>}
+        </Fragment >
     )
 }
 
