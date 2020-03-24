@@ -60,7 +60,13 @@ export const Quiz = () => {
         });
     }
 
-    console.log(questions);
+    if (progress.answeredQuestions >= 10) return (
+        <p>
+            Quizen er ferdig, og du har svart riktig
+            på {progress.correctQuestions} av {progress.answeredQuestions} spørsmål.
+        </p>
+    )
+
     return (
         <Fragment>
             <h2>Kategori:</h2>
