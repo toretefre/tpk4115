@@ -1,7 +1,21 @@
 import React, { Fragment, useState } from 'react';
-import * as jsonQuestions from './../questions.json'
+import * as q from './../questions.json'
+
+const allCategories = {
+    2: "Prosjektkarakteristikker",
+    3: "Interessenter",
+    4: "Prosjektets livsløp",
+}
 
 export const Quiz = () => {
+    const jsonQuestions = q.default;
+    console.log(jsonQuestions);
+    const categories = new Set();
+    for (let question of jsonQuestions) {
+        categories.add(question.category)
+    }
+    console.log("Categories", categories)
+
     const [category, setCategory] = useState("random");
     const [questions, setQuestions] = useState(jsonQuestions.default);
     const [currentQuestion, setCurrentQuestion] = useState({
@@ -79,10 +93,10 @@ export const Quiz = () => {
 
             <h3>{currentQuestion.text}</h3>
             {progress.answered === false && currentQuestion.correct.map(alternative =>
-                <button value={"correct"} onClick={handleAnswer}>{alternative}</button>
+                <button value={"correct"} key={alternative} onClick={handleAnswer}>{alternative}</button>
             )}
             {progress.answered === false && currentQuestion.wrong.map(alternative =>
-                <button value={"wrong"} onClick={handleAnswer}>{alternative}</button>
+                <button value={"wrong"} key={alternative} onClick={handleAnswer}>{alternative}</button>
             )}
 
             <h3>{answerText}</h3>
