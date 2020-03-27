@@ -74,7 +74,7 @@ color: white;
   background-color:green;
 }
 
-.alternativeButton, .nextButton {
+.alternativeButton, .nextButton, select {
   height: 3rem;
   background-color: black;
   color: white;
