@@ -1,19 +1,15 @@
 import React, { Fragment, useState } from 'react';
 import * as q from './../questions.json'
 
-const allCategories = {
-    2: "Prosjektkarakteristikker",
-    3: "Interessenter",
-    4: "Prosjektets livsløp",
-}
-
 export const Quiz = () => {
     const jsonQuestions = q.default;
     console.log(jsonQuestions);
-    const categories = new Set();
+    const categorySet = new Set();
+    categorySet.add(0);
     for (let question of jsonQuestions) {
-        categories.add(question.category)
+        categorySet.add(question.category)
     }
+    const categories = Array.from(categorySet)
     console.log("Categories", categories)
 
     const [category, setCategory] = useState("random");
@@ -24,13 +20,19 @@ export const Quiz = () => {
         wrong: ["Feil svar", "hvertfall feil svar", "veldig feil svar"],
     })
     const [answerText, setAnswerText] = useState("");
-
     const [progress, setProgress] = useState({
         answeredQuestions: 0,
         correctQuestions: 0,
         wrongQuestions: 0,
         answered: false,
     })
+
+    const allCategories = {
+        0: "Tilfeldige spørsmål",
+        2: "Prosjektkarakteristikker",
+        3: "Interessenter",
+        4: "Prosjektets livsløp",
+    }
 
     const handleCategoryChange = event => {
         setCategory(event.target.value);
@@ -85,10 +87,9 @@ export const Quiz = () => {
         <Fragment>
             <h2>Kategori:</h2>
             <select value={category} onChange={handleCategoryChange}>
-                <option value="random">Tilfeldige spørsmål</option>
-                <option value="1">Kapittel 1</option>
-                <option value="2">Kapittel 2</option>
-                <option value="3">Kapittel 3</option>
+                {categories.map(category =>
+                    <option value={category}>{allCategories[category]}</option>
+                )}
             </select>
 
             <h3>{currentQuestion.text}</h3>

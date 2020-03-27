@@ -1,7 +1,7 @@
 [
     {
-        "category": 0,
-        "questionText": "Hva er 2+2?",
+        "category": 2,
+        "questionText": "Spørsmål om ting fra Prosjektkarakteristikker",
         "correctAnswers": [
             "4"
         ],
@@ -12,8 +12,8 @@
         ]
     },
     {
-        "category": 0,
-        "questionText": "Hva er 10+10?",
+        "category": 2,
+        "questionText": "Enda et spørsmål fra Prosjektkarakteristikker",
         "correctAnswers": [
             "20"
         ],
@@ -24,8 +24,20 @@
         ]
     },
     {
-        "category": 1,
-        "questionText": "Hva er 69+69?",
+        "category": 4,
+        "questionText": "Spørsmål fra Prosjektets livsløp",
+        "correctAnswers": [
+            "20"
+        ],
+        "wrongAnswers": [
+            "2",
+            "3",
+            "5"
+        ]
+    },
+    {
+        "category": 3,
+        "questionText": "Spørsmål fra Interessenter",
         "correctAnswers": [
             "138"
         ],
