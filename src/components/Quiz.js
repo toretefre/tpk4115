@@ -65,14 +65,14 @@ export const Quiz = () => {
 
     const setNewQuestion = () => {
         console.log(questions);
-        setProgress({
-            ...progress,
-            answered: false,
-        });
         setCurrentQuestion({
             text: questions[0].questionText,
             correct: questions[0].correctAnswers,
             wrong: questions[0].wrongAnswers,
+        });
+        setProgress({
+            ...progress,
+            answered: false,
         });
     }
 
@@ -94,14 +94,14 @@ export const Quiz = () => {
 
             <h3>{currentQuestion.text}</h3>
             {progress.answered === false && currentQuestion.correct.map(alternative =>
-                <button value={"correct"} key={alternative} onClick={handleAnswer}>{alternative}</button>
+                <button className="alternativeButton" value={"correct"} key={alternative} onClick={handleAnswer}>{alternative}</button>
             )}
             {progress.answered === false && currentQuestion.wrong.map(alternative =>
-                <button value={"wrong"} key={alternative} onClick={handleAnswer}>{alternative}</button>
+                <button className="alternativeButton" value={"wrong"} key={alternative} onClick={handleAnswer}>{alternative}</button>
             )}
 
             <h3>{answerText}</h3>
-            <button onClick={handleNewQuestion}>Neste spørsmål</button>
+            <button className="nextButton" onClick={handleNewQuestion}>Neste spørsmål</button>
 
             <p>Du har svart riktig på {progress.correctQuestions} av {progress.answeredQuestions} spørsmål.</p>
         </Fragment >

@@ -73,3 +73,11 @@ color: white;
 .dropdown:hover .dropbtn {
   background-color:green;
 }
+
+.alternativeButton, .nextButton {
+  height: 3rem;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  padding: 0 2rem;
+}
