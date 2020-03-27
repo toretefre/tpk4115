@@ -10,10 +10,9 @@ export const Quiz = () => {
         categorySet.add(question.category)
     }
     const categories = Array.from(categorySet)
-    console.log("Categories", categories)
 
     const [category, setCategory] = useState("random");
-    const [questions, setQuestions] = useState(jsonQuestions.default);
+    const [questions, setQuestions] = useState(jsonQuestions);
     const [currentQuestion, setCurrentQuestion] = useState({
         text: "Hva er riktig svar?",
         correct: ["Riktig svar"],
@@ -65,14 +64,15 @@ export const Quiz = () => {
     }
 
     const setNewQuestion = () => {
+        console.log(questions);
         setProgress({
             ...progress,
             answered: false,
         });
         setCurrentQuestion({
-            text: "Mumbo",
-            correct: ["mumboja"],
-            wrong: ["feil", "veldig feil"]
+            text: questions[0].questionText,
+            correct: questions[0].correctAnswers,
+            wrong: questions[0].wrongAnswers,
         });
     }
 
@@ -86,9 +86,9 @@ export const Quiz = () => {
     return (
         <Fragment>
             <h2>Kategori:</h2>
-            <select value={category} onChange={handleCategoryChange}>
+            <select onChange={handleCategoryChange}>
                 {categories.map(category =>
-                    <option value={category}>{allCategories[category]}</option>
+                    <option value={category} key={category} >{allCategories[category]}</option>
                 )}
             </select>
 
