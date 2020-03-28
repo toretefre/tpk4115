@@ -49,8 +49,8 @@ export const Quiz = () => {
         });
         setCurrentQuestion({
             text: newQuestions[0].questionText,
-            correctAnswers: newQuestions[0].correctAnswers,
-            wrongAnswers: newQuestions[0].wrongAnswers,
+            correct: newQuestions[0].correctAnswers,
+            wrong: newQuestions[0].wrongAnswers,
         })
     }
 
@@ -77,7 +77,7 @@ export const Quiz = () => {
     }
 
     const handleNewQuestion = () => {
-        console.log(questions);
+        console.log(categoryQuestions);
         setCurrentQuestion({
             text: questions[0].questionText,
             correct: questions[0].correctAnswers,
@@ -95,6 +95,8 @@ export const Quiz = () => {
             på {progress.correctQuestions} av {progress.answeredQuestions} spørsmål.
         </p>
     )
+
+    console.log(currentQuestion);
 
     return (
         <Fragment>
