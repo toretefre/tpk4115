@@ -85,9 +85,6 @@ export const Quiz = () => {
 
     const handleNewQuestion = () => {
         console.log(categoryQuestions);
-        if (categoryQuestions.questions.length <= 0) {
-            alert("Ingen flere spørsmål");
-        }
         let newQuestion = categoryQuestions.questions[0]
         setCurrentQuestion({
             text: newQuestion.questionText,
@@ -116,27 +113,16 @@ export const Quiz = () => {
         </Fragment>
     )
 
-    console.log("answered =", progress.answeredQuestions, "total =", progress.totalQuestions)
-
     if (progress.answeredQuestions > 0 && progress.answeredQuestions === progress.totalQuestions) return (
         <p>
-            Kategorien har ikke mange flere spørsmål, og du har svart riktig
+            Kategorien har ikke flere spørsmål, og du svarte riktig
             på {progress.correctQuestions} av {progress.answeredQuestions} spørsmål.
         </p>
     );
-
-    if (progress.answeredQuestions >= 10) return (
-        <p>
-            Kategorien har ikke flere spørsmål, og du har svart riktig
-            på {progress.correctQuestions} av {progress.answeredQuestions} spørsmål.
-        </p>
-    );
-
-
 
     return (
         <Fragment>
-            <h2>Kategori:</h2>
+            <h2>Kategori</h2>
             <select onChange={handleCategoryChange}>
                 {categories.map(category =>
                     <option value={category} key={category} >{allCategories[category]}</option>
@@ -154,7 +140,8 @@ export const Quiz = () => {
             <h3>{answerText}</h3>
             <button className="nextButton" onClick={handleNewQuestion}>Neste spørsmål</button>
 
-            <p>Du har svart riktig på {progress.correctQuestions} av {progress.answeredQuestions} spørsmål.</p>
+            <p>Du har svart riktig på {progress.correctQuestions} av {progress.answeredQuestions} spørsmål</p>
+            <p>Kategorien har totalt {progress.totalQuestions} spørsmål</p>
         </Fragment >
     )
 }
