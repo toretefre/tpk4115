@@ -38,7 +38,10 @@ export const Quiz = () => {
         setCategory(chosenCategory);
         let newQuestions = [];
         for (let question of questions) {
-            if (question.category === parseInt(chosenCategory)) {
+            if (parseInt(chosenCategory) === parseInt(0)) {
+                newQuestions.push(question)
+            }
+            else if (parseInt(question.category) === parseInt(chosenCategory)) {
                 newQuestions.push(question)
             }
         }
@@ -52,6 +55,7 @@ export const Quiz = () => {
             correct: newQuestions[0].correctAnswers,
             wrong: newQuestions[0].wrongAnswers,
         })
+        newQuestions.shift();
     }
 
     const handleAnswer = event => {
@@ -78,11 +82,20 @@ export const Quiz = () => {
 
     const handleNewQuestion = () => {
         console.log(categoryQuestions);
+        if (categoryQuestions.questions.length <= 0) {
+            alert("Ingen flere spørsmål");
+        }
+        let newQuestion = categoryQuestions.questions[0]
         setCurrentQuestion({
-            text: questions[0].questionText,
-            correct: questions[0].correctAnswers,
-            wrong: questions[0].wrongAnswers,
+            text: newQuestion.questionText,
+            correct: newQuestion.correctAnswers,
+            wrong: newQuestion.wrongAnswers,
         });
+        let newQuestionlist = categoryQuestions.questions.shift();
+        setCategoryQuestions({
+            questions: newQuestionlist,
+            ...categoryQuestions
+        })
         setProgress({
             ...progress,
             answered: false,
