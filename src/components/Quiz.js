@@ -138,8 +138,9 @@ export const Quiz = () => {
                 <button className="alternativeButton" value={"wrong"} key={alternative} onClick={handleAnswer}>{alternative}</button>
             )}
 
-            <h3>{answerText}</h3>
-            <button className="nextButton" onClick={handleNewQuestion}>Neste spørsmål</button>
+            {progress.answered && <h3>{answerText}</h3>}
+            {progress.answered === false && <button className="nextButton" onClick={handleNewQuestion}>Sjekk svar</button>}
+            {progress.answered === true && <button className="nextButton" onClick={handleNewQuestion}>Neste spørsmål</button>}
 
             <p>Du har svart riktig på {progress.correctQuestions} av {progress.answeredQuestions} spørsmål</p>
             <p>Kategorien har totalt {progress.totalQuestions} spørsmål</p>
