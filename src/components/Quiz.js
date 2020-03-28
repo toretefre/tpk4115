@@ -3,7 +3,6 @@ import * as q from './../questions.json'
 
 export const Quiz = () => {
     const jsonQuestions = q.default;
-    console.log(jsonQuestions);
     const categorySet = new Set();
     categorySet.add(0);
     for (let question of jsonQuestions) {
@@ -13,6 +12,7 @@ export const Quiz = () => {
 
     const [category, setCategory] = useState("random");
     const [questions, setQuestions] = useState(jsonQuestions);
+    const [categoryQuestions, setCategoryQuestions] = useState({ category: -1, questions: [] })
     const [currentQuestion, setCurrentQuestion] = useState({
         text: "Hva er riktig svar?",
         correct: ["Riktig svar"],
@@ -34,7 +34,24 @@ export const Quiz = () => {
     }
 
     const handleCategoryChange = event => {
-        setCategory(event.target.value);
+        const chosenCategory = event.target.value;
+        setCategory(chosenCategory);
+        let newQuestions = [];
+        for (let question of questions) {
+            if (question.category === parseInt(chosenCategory)) {
+                newQuestions.push(question)
+            }
+        }
+        console.log("ferdig", newQuestions)
+        setCategoryQuestions({
+            category: category,
+            questions: newQuestions,
+        });
+        setCurrentQuestion({
+            text: newQuestions[0].questionText,
+            correctAnswers: newQuestions[0].correctAnswers,
+            wrongAnswers: newQuestions[0].wrongAnswers,
+        })
     }
 
     const handleAnswer = event => {
@@ -60,10 +77,6 @@ export const Quiz = () => {
     }
 
     const handleNewQuestion = () => {
-        setNewQuestion();
-    }
-
-    const setNewQuestion = () => {
         console.log(questions);
         setCurrentQuestion({
             text: questions[0].questionText,
