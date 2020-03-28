@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import * as q from './../questions.json'
 
 export const Quiz = () => {
@@ -106,6 +106,7 @@ export const Quiz = () => {
         <Fragment>
             <p>Velg en kategori for å starte!</p>
             <select onChange={handleCategoryChange}>
+                <option value={null} key={null} >-</option>
                 {categories.map(category =>
                     <option value={category} key={category} >{allCategories[category]}</option>
                 )}
