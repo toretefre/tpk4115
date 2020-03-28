@@ -10,16 +10,17 @@ export const Quiz = () => {
     }
     const categories = Array.from(categorySet)
 
-    const [category, setCategory] = useState("random");
+    const [category, setCategory] = useState();
     const [questions, setQuestions] = useState(jsonQuestions);
     const [categoryQuestions, setCategoryQuestions] = useState({ category: -1, questions: [] })
     const [currentQuestion, setCurrentQuestion] = useState({
-        text: "Hva er riktig svar?",
+        text: "Spørsmålstekst",
         correct: ["Riktig svar"],
-        wrong: ["Feil svar", "hvertfall feil svar", "veldig feil svar"],
+        wrong: ["Feil svar", "hvertfall feil svar"],
     })
-    const [answerText, setAnswerText] = useState("");
+    const [answerText, setAnswerText] = useState();
     const [progress, setProgress] = useState({
+        totalQuestions: 0,
         answeredQuestions: 0,
         correctQuestions: 0,
         wrongQuestions: 0,
@@ -45,7 +46,6 @@ export const Quiz = () => {
                 newQuestions.push(question)
             }
         }
-        console.log("ferdig", newQuestions)
         setCategoryQuestions({
             category: category,
             questions: newQuestions,
@@ -54,6 +54,10 @@ export const Quiz = () => {
             text: newQuestions[0].questionText,
             correct: newQuestions[0].correctAnswers,
             wrong: newQuestions[0].wrongAnswers,
+        })
+        setProgress({
+            ...progress,
+            totalQuestions: newQuestions.length,
         })
         newQuestions.shift();
     }
@@ -68,7 +72,6 @@ export const Quiz = () => {
             })
             setAnswerText(`Riktig! Riktig(e) svar er ${currentQuestion.correct}`)
         }
-
         if (event.target.value !== "correct") {
             setProgress({
                 ...progress,
@@ -102,14 +105,34 @@ export const Quiz = () => {
         });
     }
 
-    if (progress.answeredQuestions >= 10) return (
-        <p>
-            Quizen er ferdig, og du har svart riktig
-            på {progress.correctQuestions} av {progress.answeredQuestions} spørsmål.
-        </p>
+    if (!category) return (
+        <Fragment>
+            <p>Velg en kategori for å starte!</p>
+            <select onChange={handleCategoryChange}>
+                {categories.map(category =>
+                    <option value={category} key={category} >{allCategories[category]}</option>
+                )}
+            </select>
+        </Fragment>
     )
 
-    console.log(currentQuestion);
+    console.log("answered =", progress.answeredQuestions, "total =", progress.totalQuestions)
+
+    if (progress.answeredQuestions > 0 && progress.answeredQuestions === progress.totalQuestions) return (
+        <p>
+            Kategorien har ikke mange flere spørsmål, og du har svart riktig
+            på {progress.correctQuestions} av {progress.answeredQuestions} spørsmål.
+        </p>
+    );
+
+    if (progress.answeredQuestions >= 10) return (
+        <p>
+            Kategorien har ikke flere spørsmål, og du har svart riktig
+            på {progress.correctQuestions} av {progress.answeredQuestions} spørsmål.
+        </p>
+    );
+
+
 
     return (
         <Fragment>
