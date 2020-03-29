@@ -97,7 +97,7 @@ export const Quiz = () => {
                 wrongQuestions: progress.wrongQuestions += 1,
                 answered: true,
             })
-            setAnswerText(`Feil! Riktig svar ville vært ${currentQuestion.correct}`)
+            setAnswerText(`Feil! Riktig svar ville vært: ${currentQuestion.correct}`)
         }
     }
 
