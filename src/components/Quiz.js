@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { Fragment, useState } from 'react';
 import * as q from './../questions.json'
 
 export const Quiz = () => {
@@ -85,21 +85,23 @@ export const Quiz = () => {
 
     const handleNewQuestion = () => {
         console.log(categoryQuestions);
-        let newQuestion = categoryQuestions.questions[0]
-        setCurrentQuestion({
-            text: newQuestion.questionText,
-            correct: newQuestion.correctAnswers,
-            wrong: newQuestion.wrongAnswers,
-        });
-        let newQuestionlist = categoryQuestions.questions.shift();
-        setCategoryQuestions({
-            questions: newQuestionlist,
-            ...categoryQuestions
-        })
         setProgress({
             ...progress,
             answered: false,
         });
+        if (categoryQuestions.questions.length > 0) {
+            let newQuestion = categoryQuestions.questions[0]
+            setCurrentQuestion({
+                text: newQuestion.questionText,
+                correct: newQuestion.correctAnswers,
+                wrong: newQuestion.wrongAnswers,
+            });
+            let newQuestionlist = categoryQuestions.questions.shift();
+            setCategoryQuestions({
+                questions: newQuestionlist,
+                ...categoryQuestions
+            })
+        }
     }
 
     if (!category) return (
@@ -114,7 +116,7 @@ export const Quiz = () => {
         </Fragment>
     )
 
-    if (progress.answeredQuestions > 0 && progress.answeredQuestions === progress.totalQuestions) return (
+    if (progress.answered === false && progress.answeredQuestions === progress.totalQuestions) return (
         <p>
             Kategorien har ikke flere spørsmål, og du svarte riktig
             på {progress.correctQuestions} av {progress.answeredQuestions} spørsmål.
