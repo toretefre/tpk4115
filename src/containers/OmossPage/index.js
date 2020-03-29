@@ -27,6 +27,8 @@ export const OmossPage = () => {
             <p>
                 Våren 2020
             </p>
+
+            <img src={process.env.PUBLIC_URL + '/ntnu.png'} />
         </Fragment>
     )
 }
