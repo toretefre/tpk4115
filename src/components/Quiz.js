@@ -70,8 +70,11 @@ export const Quiz = () => {
             wrong: newQuestions[0].wrongAnswers,
         })
         setProgress({
-            ...progress,
             totalQuestions: newQuestions.length,
+            answeredQuestions: 0,
+            correctQuestions: 0,
+            wrongQuestions: 0,
+            answered: false,
         })
         newQuestions.shift();
     }
