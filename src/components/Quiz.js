@@ -40,6 +40,11 @@ export const Quiz = () => {
         2: "Prosjektkarakteristikker",
         3: "Interessenter",
         4: "Prosjektets livsløp",
+        5: "Prosjektinitiering",
+        6: "Suksess",
+        8: "Prosjektorganisering",
+        9: "Prosjektplanlegging",
+        10: "Inntjent verdi (EV)"
     }
 
     const handleCategoryChange = event => {
@@ -134,6 +139,9 @@ export const Quiz = () => {
             <button className="nextButton" onClick={() => window.location.reload()}>Start på nytt</button>
         </Fragment >
     );
+
+    const alternativeArray = []
+
 
     return (
         <Fragment>
