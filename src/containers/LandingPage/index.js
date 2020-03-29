@@ -21,11 +21,6 @@ export const LandingPage = () => {
             </p>
 
             <p>
-                I den andre quiztypen velger du ut et kapittel fra pensum ved
-                en nedtrekksmeny man finner under "quiz" på menyen over.
-            </p>
-
-            <p>
                 Den ene quiztypen inneholder tilfeldige spørsmål som er ment
                 å oppsummere de viktigste delene av pensum i grove trekk.
             </p>
