@@ -122,7 +122,7 @@ export const Quiz = () => {
     }
 
     if (!category) return (
-        <Fragment>
+        <article>
             <p>Velg en kategori for å starte!</p>
             <select onChange={handleCategoryChange}>
                 <option value={null} key={null} >-</option>
@@ -130,17 +130,17 @@ export const Quiz = () => {
                     <option value={category} key={category} >{allCategories[category]}</option>
                 )}
             </select>
-        </Fragment>
+        </article>
     )
 
     if (progress.answered === false && progress.answeredQuestions === progress.totalQuestions) return (
-        <Fragment>
+        <article>
             <p>
                 Kategorien har ikke flere spørsmål, og du svarte riktig
                 på {progress.correctQuestions} av {progress.answeredQuestions} spørsmål.
             </p>
             <button className="nextButton" onClick={() => window.location.reload()}>Start på nytt</button>
-        </Fragment >
+        </article >
     );
 
     const alternativeArray = []
@@ -151,7 +151,7 @@ export const Quiz = () => {
     shuffleArray(alternativeArray);
 
     return (
-        <Fragment>
+        <article>
             <h2>Kategori</h2>
             <select onChange={handleCategoryChange}>
                 {categories.map(category =>
@@ -167,7 +167,7 @@ export const Quiz = () => {
 
             <p>Du har svart riktig på {progress.correctQuestions} av {progress.answeredQuestions} spørsmål</p>
             <p>Kategorien har totalt {progress.totalQuestions} spørsmål</p>
-        </Fragment >
+        </article >
     )
 }
 

@@ -36,7 +36,11 @@ export const LandingPage = () => {
             </p>
 
             <h3>
-                Velg "Quiz" for å starte din reise gjennom pensum. Lykke til!
+                Velg "Quiz" for å starte din reise gjennom pensum
+            </h3>
+
+            <h3>
+                Lykke til!
             </h3>
         </Fragment >
     )
