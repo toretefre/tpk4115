@@ -33,9 +33,7 @@ nav {
 
 img {
   max-width: 50%;
-  float: right;
-  padding-top: 1em;
-  
+  margin: 3rem 0;
 }
 
 .dropdown-content b {

@@ -34,9 +34,9 @@ export const LandingPage = () => {
                 I den andre quiztypen velger du ut et kapittel fra pensum ved
                 en nedtrekksmeny man finner under "quiz" på menyen over.
             </p>
-            
-            <p> 
-                Vi har valgt å ekskludere kapittel 1 og 7. Dette fordi kapittel 1 er et introduksjonskapittel og kapittel 7 er 
+
+            <p>
+                Vi har valgt å ekskludere kapittel 1 og 7. Dette fordi kapittel 1 er et introduksjonskapittel og kapittel 7 er
                 et oppsummerende kapittel med funn fra casene.
             </p>
 
@@ -47,6 +47,8 @@ export const LandingPage = () => {
             <h3>
                 Lykke til!
             </h3>
+
+            <img src={process.env.PUBLIC_URL + '/ntnu.png'} />
         </Fragment >
     )
 }
