@@ -131,6 +131,8 @@ export const Quiz = () => {
                     <option value={category} key={category} >{allCategories[category]}</option>
                 )}
             </select>
+
+            <img src={process.env.PUBLIC_URL + '/quiz.jpg'} />
         </article>
     )
 
