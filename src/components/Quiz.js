@@ -1,6 +1,14 @@
 import React, { Fragment, useState } from 'react';
 import * as q from './../questions.json'
 
+// stackoverflow.com/a/12646864
+const shuffleArray = array => {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
 export const Quiz = () => {
     const jsonQuestions = q.default;
     const categorySet = new Set();
@@ -46,6 +54,7 @@ export const Quiz = () => {
                 newQuestions.push(question)
             }
         }
+        shuffleArray(newQuestions);
         setCategoryQuestions({
             category: category,
             questions: newQuestions,
