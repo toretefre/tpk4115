@@ -117,10 +117,13 @@ export const Quiz = () => {
     )
 
     if (progress.answered === false && progress.answeredQuestions === progress.totalQuestions) return (
-        <p>
-            Kategorien har ikke flere spørsmål, og du svarte riktig
-            på {progress.correctQuestions} av {progress.answeredQuestions} spørsmål.
-        </p>
+        <Fragment>
+            <p>
+                Kategorien har ikke flere spørsmål, og du svarte riktig
+                på {progress.correctQuestions} av {progress.answeredQuestions} spørsmål.
+            </p>
+            <button className="nextButton" onClick={() => window.location.reload()}>Start på nytt</button>
+        </Fragment >
     );
 
     return (
