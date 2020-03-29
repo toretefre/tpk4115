@@ -144,7 +144,11 @@ export const Quiz = () => {
     );
 
     const alternativeArray = []
-
+    currentQuestion.correct.forEach(alternative =>
+        alternativeArray.push(<button className="alternativeButton" value={"correct"} key={alternative} onClick={handleAnswer}>{alternative}</button>))
+    currentQuestion.wrong.forEach(alternative =>
+        alternativeArray.push(<button className="alternativeButton" value={"wrong"} key={alternative} onClick={handleAnswer}>{alternative}</button>))
+    shuffleArray(alternativeArray);
 
     return (
         <Fragment>
@@ -156,12 +160,7 @@ export const Quiz = () => {
             </select>
 
             <h3>{currentQuestion.text}</h3>
-            {progress.answered === false && currentQuestion.correct.map(alternative =>
-                <button className="alternativeButton" value={"correct"} key={alternative} onClick={handleAnswer}>{alternative}</button>
-            )}
-            {progress.answered === false && currentQuestion.wrong.map(alternative =>
-                <button className="alternativeButton" value={"wrong"} key={alternative} onClick={handleAnswer}>{alternative}</button>
-            )}
+            {progress.answered === false && alternativeArray}
 
             {progress.answered && <h3>{answerText}</h3>}
             {progress.answered === false && <button className="nextButton" onClick={handleNewQuestion}>Sjekk svar</button>}
