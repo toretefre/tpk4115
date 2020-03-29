@@ -1,215 +1,548 @@
-[{
-    "category": 2,
-    "questionText": "Hvilke type prosjekter er definert i læreboken Veien til suksess?",
-    "correctAnswers": [
-        "Omstillingsprosjekter, IKT- og programvareprosjekter, byggeprosjekter, produktutvikling og forskning og utredningsprosjekter"
-    ],
-    "wrongAnswers": [
-        "omstillingsprosjekter, IKT- og programvareprosjekter, byggeprosjekter, tjenesteprosjekter og forskning og utredningsprosjekter",
-        "omstillingsprosjekter, IKT- og programvareprosjekter, produktutvikling og forskning og utredningsprosjekter"
-    ]
-},
-{
-    "category": 2,
-    "questionText": "Hva er definisjonen på en organisasjon?",
-    "correctAnswers": [
-        "En gruppe mennesker som må koordinere sine oppgaver for å imøtekomme organisasjonens mål"
-    ],
-    "wrongAnswers": [
-        "En gruppe mennesker som jobber selvstendig for å imøtekomme organisasjonens mål",
-        "En gruppe mennesker som ikke trenger å koordinere sine oppgaver for å imøtekomme organisasjonens mål"
-    ]
-},
-{
-    "category": 2,
-    "questionText": "Hvilket type prosjekt er preget av ulike typer føringer og begrensninger som gir store krav til styring og planlegging?",
-    "correctAnswers": [
-        "Byggeprosjekter"
-    ],
-    "wrongAnswers": [
-        "Omstillingsprosjekter",
-        "Produktutvikling",
-        "IKT- og programvareprosjekter"
-    ]
-},
-{
-    "category": 2,
-    "questionText": "Hva karakteriserer et prosjekt?",
-    "correctAnswers": [
-        "Organisatorisk kompleksitet, medfører endringer, har innvirkning på virksomheten eller strategien, gjennomføres innen gitte begrensninger som tid, kostnad, krav osv. samt usikkerhet"
-    ],
-    "wrongAnswers": [
-        "Organisatorisk kompleksitet, medfører ikke endringer, har innvirkning på virksomheten eller strategien, gjennomføres innen gitte begrensninger som tid, kostnad, krav osv. samt usikkerhet",
-        "Organisatorisk kompleksitet, medfører endringer, har innvirkning på virksomheten eller strategien, gjennomføres ikke innen gitte begrensninger"
-    ]
-},
-{
-    "category": 3,
-    "questionText": "Hensikten med å analysere interessentene er å undersøke hva slags bånd som finnes mellom hver interessent og prosjektet?",
-    "correctAnswers": [
-        "Sant"
-    ],
-    "wrongAnswers": [
-        "Ikke sant"
-    ]
-},
-{
-    "category": 3,
-    "questionText": "Interessenter er alle enkeltindivider som på en eller annen måte bidrar til prosjektets suksess eller fiasko",
-    "correctAnswers": [
-        "Sant"
-    ],
-    "wrongAnswers": [
-        "Ikke sant"
-    ]
-},
-{
-    "category": 3,
-    "questionText": "Håndtering av interessenter består av tre hovedoppgaver, hva er disse? ",
-    "correctAnswers": [
-        "Kartlegging og identifisering av interessentene, analysere interessentene og identifisere relasjonene mellom hver interessent og prosjektet samt iverksette passende strategier for kommunikasjon med hver interessent eller interessentkategori"
-    ],
-    "wrongAnswers": [
-        "Analysere interessentene og identifisere relasjonene mellom hver interessent og prosjektet, kommunisere jevnlig med alle interessentene samt iverksette passende strategier for kommunikasjon med hver interessent eller interessentkategori"
-    ]
-},
-{
-    "category": 3,
-    "questionText": "Hvilke tre organisasjonsstrukturer er beskrevet i pensumlitteraturen ? ",
-    "correctAnswers": [
-        "Funksjonell struktur, divisjonalisert struktur og matrisestruktur"
-    ],
-    "wrongAnswers": [
-        "Funksjonell struktur, divisjonalisert struktur og matrisestruktur",
-        "Hierarkisk struktur, prosjektstruktur og matrisestruktur"
-    ]
-},
-{
-    "category": 3,
-    "questionText": "Interessekartlegging benyttes som et…",
-    "correctAnswers": [
-        "Støtteverktøy for å posisjonere kategorier av interessentene i prosjektet"
-    ],
-    "wrongAnswers": [
-        "Verktøy for å avdekke hvordan kunders behov kan bli møtt",
-        "Et styringsverktøy for å finne interessentenes mål",
-        "En programvare ofte brukt i prosjekter"
-    ]
-},
-{
-    "category": 4,
-    "questionText": "Hva er prosjektets livsløp? En måte å visualisere de viktigste arbeidsoppgavene og prosessene på for å nå målet med prosjektet.",
-    "correctAnswers": [
-        "Riktig"
-    ],
-    "wrongAnswers": [
-        "Feil"
-    ]
-},
-{
-    "category": 4,
-    "questionText": "Hva er hensikten med å definere livsløpet? Hvilket alternativ er riktig?",
-    "correctAnswers": [
-        "Planlegging og styring for prosjektleder, samt kontrollering for oppdragsgiveren/ prosjekteieren. "
-    ],
-    "wrongAnswers": [
-        "Planlegging og styring for oppdragsgiveren/prosjekteieren, samt kontrollering for prosjektleder. "
-    ]
-},
-{
-    "category": 4,
-    "questionText": "Hva er utgangspunktet for oppnå resultater og positive effekter ved et prosjekt? Hvilket alternativ er riktig?",
-    "correctAnswers": [
-        "Å erkjenne at prosjektet har perspektiver (mange interessenter)"
-    ],
-    "wrongAnswers": [
-        "Å utføre en risikoanalyse. ",
-        "Å beskrive utviklingen av prosjektet"
-    ]
-},
-{
-    "category": 5,
-    "questionText": "I hvilken fase er den største muligheten til å påvirke prosjektet? ",
-    "correctAnswers": [
-        "Initieringsfasen"
-    ],
-    "wrongAnswers": [
-        "Planleggingsfasen",
-        "Gjennomføringsfasen",
-        "Avslutningsfasen"
-    ]
-},
-{
-    "category": 5,
-    "questionText": "Hva er viktig å gjøre i initieringsfasen? Er påstanden riktig eller feil? I initieringsfasen er det viktig å skape felles forståelse, enighet og standhaftighet i prosjektet, samt å avdekke uklarheter og flertydigheter knyttet til målene. ",
-    "correctAnswers": [
-        "Riktig"
-    ],
-    "wrongAnswers": [
-        "Feil"
-    ]
-},
-{
-    "category": 5,
-    "questionText": "Hva er et prosjektmandat? Er påstanden riktig eller feil? Et prosjektmandat er en beskrivelse av prosjektets interessenter.",
-    "correctAnswers": [
-        "Feil"
-    ],
-    "wrongAnswers": [
-        "Riktig"
-    ]
-},
-{
-    "category": 5,
-    "questionText": "Hva bør prosjektmandatet inneholde?",
-    "correctAnswers": [
-        "Alle alternativ er riktige"
-    ],
-    "wrongAnswers": [
-        "Leveranser i prosjekte",
-        "Formålet med prosjektet",
-        "Effektmålet med prosjektet",
-        "Ingen av alternativene"
-    ]
-},
-{
-    "category": 5,
-    "questionText": "Hva er den utløsende faktoren (rational) til et prosjekt?",
-    "correctAnswers": [
-        "Begrunnelsen for initiering av prosjektet"
-    ],
-    "wrongAnswers": [
-        "Begrunnelsen bak igangsettelsen av prosjektet",
-        "Begrunnelsen bak avslutningen av prosjektet"
-    ]
-},
-{
-    "category": 5,
-    "questionText": "Hva er et resultatmål?",
-    "correctAnswers": ["En beskrivelse av prosjektet skal resultere i. Beskrivelsen kan omfatte håndgripelige leveranser og konseptuelle leveranser. "],
-    "wrongAnswers": ["En beskrivelse av tilsiktede nytteeffekter av prosjektet. Den peker frem i tiden og beskriver det tilsiktede utfallet av prosjektet på business, virksomhet og sluttbruker. "]
-},
-{
-    "category": 6,
-    "questionText": "I boken «veien til suksess», er det definert ulike problemer tilknyttet begrepet suksess eller fiasko av et prosjekt. Hvor mange problemer er definert?",
-    "correctAnswers": [
-        "2"
-    ],
-    "wrongAnswers": [
-        "1",
-        "3",
-        "Over 10 stk."
-    ]
-},
-{
-    "category": 6,
-    "questionText": "Hva innebærer de problemene tilknyttet begrepene suksess eller fiaso av prosjekter?",
-    "correctAnswers": [
-        "Definering av kriterier, dimensjoner eller indikatorer og hvilke tilnærminger eller metoder for måling av indikatorene, og når de skal måles"
-    ],
-    "wrongAnswers": [
-        "Definering av krav, rammer og behov til kvalitet og lønnsomhet, både i et kortsiktig og et langsiktig perspektiv samt skape felles forståelse, enighet standhaftighet til målene",
-        "Definere og evaluere oppnåelse av prosjektets resultat, -effekt, - og samfunnsmål"
-    ]
-}
+[
+    {
+        "category": 2,
+        "questionText": "Hvilke type prosjekter er definert i læreboken «Veien til suksess»?",
+        "correctAnswers": [
+            "Omstillingsprosjekter, IKT- og programvareprosjekter, byggeprosjekter, produktutvikling og forskning og utredningsprosjekter."
+        ],
+        "wrongAnswers": [
+            "Omstillingsprosjekter, IKT- og programvareprosjekter, byggeprosjekter, tjenesteprosjekter og forskning og utredningsprosjekter.",
+            "Omstillingsprosjekter, IKT- og programvareprosjekter, produktutvikling og forskning og utredningsprosjekter."
+        ]
+    },
+    {
+        "category": 2,
+        "questionText": "Hva er definisjonen på en organisasjon?",
+        "correctAnswers": [
+            "En gruppe mennesker som må koordinere sine oppgaver for å imøtekomme organisasjonens mål."
+        ],
+        "wrongAnswers": [
+            "En gruppe mennesker som jobber selvstendig for å imøtekomme organisasjonens mål.",
+            "En gruppe mennesker som ikke trenger å koordinere sine oppgaver for å imøtekomme organisasjonens mål."
+        ]
+    },
+    {
+        "category": 2,
+        "questionText": "Hvilket type prosjekt er preget av ulike typer føringer og begrensninger som gir store krav til styring og planlegging?",
+        "correctAnswers": [
+            "Byggeprosjekter"
+        ],
+        "wrongAnswers": [
+            "Omstillingsprosjekter",
+            "Produktutvikling",
+            "IKT- og programvareprosjekter"
+        ]
+    },
+    {
+        "category": 2,
+        "questionText": "Hva karakteriserer et prosjekt?",
+        "correctAnswers": [
+            "Organisatorisk kompleksitet, medfører endringer, har innvirkning på virksomheten eller strategien, gjennomføres innen gitte begrensninger som tid, kostnad, krav osv. samt usikkerhet."
+        ],
+        "wrongAnswers": [
+            "Organisatorisk kompleksitet, medfører ikke endringer, har innvirkning på virksomheten eller strategien, gjennomføres innen gitte begrensninger som tid, kostnad, krav osv. samt usikkerhet.",
+            "Organisatorisk kompleksitet, medfører endringer, har innvirkning på virksomheten eller strategien, gjennomføres ikke innen gitte begrensninger."
+        ]
+    },
+    {
+        "category": 2,
+        "questionText": "Hvilken av påstandene om usikkerhet er korrekt?",
+        "correctAnswers": [
+            "Usikkerhet er proporsjonelt med innovasjonsgrad."
+        ],
+        "wrongAnswers": [
+            "Usikkerhet øker når prosjektet er kjent for oppdragsgiver.",
+            "Usikkerhet er en faktor man umulig kan redusere i prosjekter.",
+            "Usikkerhet er størst i omstillingsprosjekter."
+        ]
+    },
+    {
+        "category": 3,
+        "questionText": "Hensikten med å analysere interessentene er å undersøke hva slags bånd som finnes mellom hver interessent og prosjektet.",
+        "correctAnswers": [
+            "Sant"
+        ],
+        "wrongAnswers": [
+            "Ikke sant"
+        ]
+    },
+    {
+        "category": 3,
+        "questionText": "Interessenter er alle enkeltindivider som på en eller annen måte bidrar til prosjektets suksess eller fiasko.",
+        "correctAnswers": [
+            "Sant"
+        ],
+        "wrongAnswers": [
+            "Ikke sant"
+        ]
+    },
+    {
+        "category": 3,
+        "questionText": "Interessenter er personer som har investert ressurser i et prosjekt.",
+        "correctAnswers": [
+            "Ikke sant"
+        ],
+        "wrongAnswers": [
+            "Sant"
+        ]
+    },
+    {
+        "category": 3,
+        "questionText": "Håndtering av interessenter består av tre hovedoppgaver, hva er disse? ",
+        "correctAnswers": [
+            "Kartlegging og identifisering av interessentene, analysere interessentene og identifisere relasjonene mellom hver interessent og prosjektet samt iverksette passende strategier for kommunikasjon med hver interessent eller interessentkategori."
+        ],
+        "wrongAnswers": [
+            "Analysere interessentene og identifisere relasjonene mellom hver interessent og prosjektet, kommunisere jevnlig med alle interessentene samt iverksette passende strategier for kommunikasjon med hver interessent eller interessentkategori."
+        ]
+    },
+    {
+        "category": 3,
+        "questionText": "Hvilke tre organisasjonsstrukturer er beskrevet i pensumlitteraturen? ",
+        "correctAnswers": [
+            "Funksjonell struktur, prosjektstruktur og matrisestruktur."
+        ],
+        "wrongAnswers": [
+            "Funksjonell struktur, divisjonalisert struktur og matrisestruktur.",
+            "Hierarkisk struktur, prosjektstruktur og matrisestruktur."
+        ]
+    },
+    {
+        "category": 3,
+        "questionText": "Interessekartlegging benyttes som et…",
+        "correctAnswers": [
+            "Støtteverktøy for å posisjonere kategorier av interessentene i prosjektet."
+        ],
+        "wrongAnswers": [
+            "Verktøy for å avdekke hvordan kunders behov kan bli møtt.",
+            "Styringsverktøy for å finne interessentenes mål.",
+            "Verktøy for risikoanalyse i prosjekter."
+        ]
+    },
+    {
+        "category": 4,
+        "questionText": "Prosjektets livsløp er en måte å visualisere de viktigste arbeidsoppgavene, og prosessene i et prosjekt for å oppnå dets mål.",
+        "correctAnswers": [
+            "Riktig"
+        ],
+        "wrongAnswers": [
+            "Feil"
+        ]
+    },
+    {
+        "category": 4,
+        "questionText": "Hva er hensikten med å definere livsløpet, hvilket alternativ er riktig?",
+        "correctAnswers": [
+            "Planlegging og styring for prosjektleder, samt kontrollering for oppdragsgiveren/ prosjekteieren."
+        ],
+        "wrongAnswers": [
+            "Planlegging og styring for oppdragsgiveren/prosjekteieren, samt kontrollering for prosjektleder."
+        ]
+    },
+    {
+        "category": 4,
+        "questionText": "Hva er utgangspunktet for oppnå resultater og positive effekter ved et prosjekt? Hvilket alternativ er riktig?",
+        "correctAnswers": [
+            "Å erkjenne at prosjektet har perspektiver (mange interessenter)."
+        ],
+        "wrongAnswers": [
+            "Å utføre en risikoanalyse.",
+            "Å beskrive utviklingen av prosjektet"
+        ]
+    },
+    {
+        "category": 4,
+        "questionText": "I pensumslitteraturen defineres det tre perspektiver i prosjekter. Hvilke er disse?",
+        "correctAnswers": [
+            "Prosjekteierperspektivet, interessentenes perspektiv og prosjektorganisasjonens perspektiv."
+        ],
+        "wrongAnswers": [
+            "Eier-, bruker- og interessentperspektivet",
+            "I pensum er det faktisk fire perspektiver. Prosjekteierperspektiv, interessentperspektiv, prosjektperspektiv og brukerperspektiv.",
+            "Prosess perspektiv, program perspektiv og suksess perspektiv."
+        ]
+    },
+    {
+        "category": 4,
+        "questionText": "Hva er viktig i arbeid med de ulike perspektivene i prosjekter",
+        "correctAnswers": [
+            "Omforene og balansere perspektivene, med tett kommunikasjon, involvering og tillit mellom oppdragsgiver, prosjektorganisasjon og sluttbrukere."
+        ],
+        "wrongAnswers": [
+            "Å skape samlet oppslutning, slik at alle perspektiver sammenfaller.",
+            "Å definere felles problemer, slik at disse blir belyst i prosjektmandat.",
+            "Prioritere perspektivet til prosjekteier, da dette er det viktigste perspektivet for suksess."
+        ]
+    },
+    {
+        "category": 5,
+        "questionText": "I hvilken fase er det størst mulighet til å påvirke prosjekter? ",
+        "correctAnswers": [
+            "Initieringsfasen"
+        ],
+        "wrongAnswers": [
+            "Planleggingsfasen",
+            "Gjennomføringsfasen",
+            "Avslutningsfasen"
+        ]
+    },
+    {
+        "category": 5,
+        "questionText": "Er påstanden riktig eller feil? «I initieringsfasen er det viktig å skape felles forståelse, enighet og standhaftighet i prosjektet, samt å avdekke uklarheter og flertydigheter knyttet til målene». ",
+        "correctAnswers": [
+            "Riktig"
+        ],
+        "wrongAnswers": [
+            "Feil"
+        ]
+    },
+    {
+        "category": 5,
+        "questionText": "Hva er et prosjektmandat? «Et prosjektmandat er en beskrivelse av prosjektets interessenter».",
+        "correctAnswers": [
+            "Feil"
+        ],
+        "wrongAnswers": [
+            "Riktig"
+        ]
+    },
+    {
+        "category": 5,
+        "questionText": "Hva bør prosjektmandatet inneholde?",
+        "correctAnswers": [
+            "Alle alternativ er riktige."
+        ],
+        "wrongAnswers": [
+            "Leveranser i prosjektet.",
+            "Formålet med prosjektet.",
+            "Effektmålet med prosjektet.",
+            "Ingen av alternativene."
+        ]
+    },
+    {
+        "category": 5,
+        "questionText": "Hva er den utløsende faktoren (rational) til et prosjekt?",
+        "correctAnswers": [
+            "Begrunnelsen for initiering av prosjektet."
+        ],
+        "wrongAnswers": [
+            "Begrunnelsen bak igangsettelsen av prosjektet.",
+            "Begrunnelsen bak avslutningen av prosjektet."
+        ]
+    },
+    {
+        "category": 5,
+        "questionText": "Hva er et resultatmål?",
+        "correctAnswers": [
+            "En beskrivelse av prosjektet skal resultere i. Beskrivelsen kan omfatte håndgripelige leveranser og konseptuelle leveranser. "
+        ],
+        "wrongAnswers": [
+            "En beskrivelse av tilsiktede nytteeffekter av prosjektet. Den peker frem i tiden og beskriver det tilsiktede utfallet av prosjektet på business, virksomhet og sluttbruker. "
+        ]
+    },
+    {
+        "category": 6,
+        "questionText": "I boken «veien til suksess», er det definert ulike problemer tilknyttet begrepet suksess eller fiasko av et prosjekt. Hvor mange problemer er definert?",
+        "correctAnswers": [
+            "2"
+        ],
+        "wrongAnswers": [
+            "1",
+            "3",
+            "Over 10 stk."
+        ]
+    },
+    {
+        "category": 6,
+        "questionText": "Hva innebærer de problemene tilknyttet begrepene suksess eller fiaso av prosjekter?",
+        "correctAnswers": [
+            "Definering av kriterier, dimensjoner eller indikatorer og hvilke tilnærminger eller metoder for måling av indikatorene, og når de skal måles."
+        ],
+        "wrongAnswers": [
+            "Definering av krav, rammer og behov til kvalitet og lønnsomhet, både i et kortsiktig og et langsiktig perspektiv samt skape felles forståelse, enighet standhaftighet til målene.",
+            "Definere og evaluere oppnåelse av prosjektets resultat, -effekt, - og samfunnsmål."
+        ]
+    },
+    {
+        "category": 6,
+        "questionText": "Hvilken av disse kriteriene inngår i Shenars suksessklynge ved definisjon av suksess?",
+        "correctAnswers": [
+            "Overgangen fra gjennomføringsfase til hele prosjektets livssyklus."
+        ],
+        "wrongAnswers": [
+            "Virksomhetssuksess for den utførende organisasjonen.",
+            "Prosjektsuksess."
+        ]
+    },
+    {
+        "category": 6,
+        "questionText": "Hva menes med prosjektledelsessuksess?",
+        "correctAnswers": [
+            "I hvilken grad prosjektet har oppnådd krav og forventninger til; Gjennomføring, kostnadsramme, spesifikasjonskrav og eksterne/interne begrensninger til gjennomføring."
+        ],
+        "wrongAnswers": [
+            "Hvordan prosjektdeltakerne opplever prosjektgjennomføringen sett fra et emosjonelt perspektiv.",
+            "Indikatorer for oppnåelse av; formål, effekt- og strategiske mål, bruker- og kundetilfredshet, økonomiske aspekter, kompetanseheving og renommé."
+        ]
+    },
+    {
+        "category": 6,
+        "questionText": "Hvilken av disse er IKKE en del av Pintos generiske suksessfaktorer:",
+        "correctAnswers": [
+            "Tilstrekkelig prosjektstyring."
+        ],
+        "wrongAnswers": [
+            "Støtte fra toppledelsen.",
+            "Problemhåndtering"
+        ]
+    },
+    {
+        "category": 7,
+        "questionText": "Hvilket av alternativene er IKKE en av organisasjonsstrukturene i et prosjekt-perspektiv?",
+        "correctAnswers": [
+            "Lineærstruktur."
+        ],
+        "wrongAnswers": [
+            "Prosjektstruktur.",
+            "Funksjonellstruktur.",
+            "Matrisestruktur."
+        ]
+    },
+    {
+        "category": 7,
+        "questionText": "Hvem er beslutningstaker i en funksjonellstruktur?",
+        "correctAnswers": [
+            "Linjeledelsen."
+        ],
+        "wrongAnswers": [
+            "Prosjektleder.",
+            "Prosjektgruppen.",
+            "Verneombud."
+        ]
+    },
+    {
+        "category": 7,
+        "questionText": "Hvilke av de følgende alternativene er IKKE en faktor som avgjør hvordan en organisasjon skal struktureres?",
+        "correctAnswers": [
+            "Nærhet til hovedkvarter."
+        ],
+        "wrongAnswers": [
+            "Endringstakt av teknologi.",
+            "Tilgjengelighet av ressurser.",
+            "Krav til beslutningsprosesser.",
+            "Type oppgaver som organisasjonen tilbyr."
+        ]
+    },
+    {
+        "category": 7,
+        "questionText": "Hvilke 3 underkategorier finnes i en matrisestruktur?",
+        "correctAnswers": [
+            "Svak, sterk og balansert matrise."
+        ],
+        "wrongAnswers": [
+            "Høy, lav og mellom-matrise.",
+            "Mellom-matrise, balansert matrise og variabel matrise.",
+            "Liten, stor og balansert matrise."
+        ]
+    },
+    {
+        "category": 7,
+        "questionText": "Hva kjennetegner IKKE en prosjektstruktur?",
+        "correctAnswers": [
+            "Lavere kostnader."
+        ],
+        "wrongAnswers": [
+            "Prosjektmedarbeiderne er vanligvis samlokalisert.",
+            "Modellen er fleksibel med kort responstid.",
+            "Prosjektleder har stor beslutningsmyndighet."
+        ]
+    },
+    {
+        "category": 7,
+        "questionText": "Hva kjennetegner en matrisestruktur?",
+        "correctAnswers": [
+            "Medarbeidere i en organisasjon deltar i flere aktiviteter eller områder etter behov."
+        ],
+        "wrongAnswers": [
+            "Kjennetegnes ved ubalansert maktforhold.",
+            "Er en struktur hvor medarbeideren får bestemme selv hvor de ønsker å legge ned arbeid.",
+            "Er den mest effektive måten å fordele ressurser på."
+        ]
+    },
+    {
+        "category": 8,
+        "questionText": "Hva omfatter prosjektplanlegging?",
+        "correctAnswers": [
+            "Oppgaver og aktiviteter som dokumenterer og illustrer hvordan prosjektets resultat skal utformes og leveres."
+        ],
+        "wrongAnswers": [
+            "Sammenstilling av oppgaver.",
+            "Orientering av de ulike instansene i et prosjekt om mulige problemer.",
+            "Dokumentering og planlegging av prosjektets mål."
+        ]
+    },
+    {
+        "category": 8,
+        "questionText": "Er påstanden rikitg eller feil? «Prosjektplanen burde bli detaljert planlagt før prosjektstart, og til best mulig evne bli fulgt og ikke endret på».",
+        "correctAnswers": [
+            "Feil"
+        ],
+        "wrongAnswers": [
+            "Riktig"
+        ]
+    },
+    {
+        "category": 8,
+        "questionText": "Hva kan en analyse av AON-nettverket gi?",
+        "correctAnswers": [
+            "Gi svar på hvor lang tid det vil ta å fullføre hele prosjeket."
+        ],
+        "wrongAnswers": [
+            "Gi svar på hvem som er våre interessenter.",
+            "Gi indikasjon på total kostnad av prosjektet.",
+            "Kan gi oss en oversikt over prosjektets avhengighet til dens interessenter."
+        ]
+    },
+    {
+        "category": 8,
+        "questionText": "Hvilket planleggingsverktøy kan brukes for å visualisere ressursbehov for et prosjekt over tid?",
+        "correctAnswers": [
+            "Ressursdiagram"
+        ],
+        "wrongAnswers": [
+            "Nettverksdiagram",
+            "S-Kurve",
+            "Milepælplan"
+        ]
+    },
+    {
+        "category": 8,
+        "questionText": "Hvilket planleggingsverktøy brukes for å bryte ned et prosjekt i arbeidspakker, belyser hvem som er ansvarlig, og hvilke som må gjøres til hvilken tid?",
+        "correctAnswers": [
+            "Prosjektnedbrytningsstruktur (PBS)"
+        ],
+        "wrongAnswers": [
+            "S-Kurve",
+            "Nettverksdiagram",
+            "Milepælplan"
+        ]
+    },
+    {
+        "category": 9,
+        "questionText": "I pensum har vi et begrep kalt PV, hva står dette for?",
+        "correctAnswers": [
+            "Planned Value, som et estimat på planlagt akkumulerte kostnader."
+        ],
+        "wrongAnswers": [
+            "Present Value, nøyakyig kostnad på et gitt tidspunkt i prosjektet.",
+            "Proficient Value, verdien på et prosjekt om det er effektivt."
+        ]
+    },
+    {
+        "category": 9,
+        "questionText": "Hva er AC?",
+        "correctAnswers": [
+            "AC står for actual costs, og angir akkumulerte påløpte kostnader (eller timer)."
+        ],
+        "wrongAnswers": [
+            "AC står for accumulated costs, og er et estimat på faktiske kostnader.",
+            "Det er ikke noe som heter AC i pensumslitteraturen.",
+            "Står for Always Costly, som betyr at prosjekter alltid går over budsjett."
+        ]
+    },
+    {
+        "category": 9,
+        "questionText": "Hvordan beregner man SPI?",
+        "correctAnswers": [
+            "SPI=EV/PV"
+        ],
+        "wrongAnswers": [
+            "SPI=EV*PV",
+            "SPI=EV-PV*AC",
+            "SPI=EV+PV+AC"
+        ]
+    },
+    {
+        "category": 9,
+        "questionText": "Hva er SPI?",
+        "correctAnswers": [
+            "SPI, står for Scheduell Performance Index og gir indikasjon for hvordan prosjektet ligger an i forhold til tidsplan."
+        ],
+        "wrongAnswers": [
+            "SPI, står får Start Present Indicator, og indikerer hvor langt tid det har gått fra start til nåtid.",
+            "SPI, betyr Selective Performance Influencer, den viser hvor stor påvirkning prosjektet har på de ulike interessentene."
+        ]
+    },
+    {
+        "category": 9,
+        "questionText": "Hvorfor er det viktig og beregne inntjent verdi for fremdrift i prosjekter?",
+        "correctAnswers": [
+            "Fordi sammenligning mellom påløpte kostnader og planlagte kostnader, ikke gir tilstrekkelig grunnlag for evaluering av fremdrift i prosjekter."
+        ],
+        "wrongAnswers": [
+            "Fordi dette kreves av av finanstilsynet.",
+            "Uten dette vil man ikke se verdien ved prosjektets slutt, og trenger derfor flere verktøy for slike beregninger.",
+            "Det skaper aksept hos interessenter."
+        ]
+    },
+    {
+        "category": 10,
+        "questionText": "Hvordan definerer Pinto risk management-prosessen i kapittel 11?",
+        "correctAnswers": [
+            "Kunsten og vitenskapen å identifisere, analysere og håndtere risikofaktorer gjennom hele livsløpet til et prosjekt for å nå sine mål."
+        ],
+        "wrongAnswers": [
+            "Kunsten og vitenskapen til å vurdere, planlegge og overvåke risikofaktorer gjennom hele livsløpet til et prosjekt for å nå sine mål.",
+            "Et viktig verktøy til å skape oversikt over risikoen i prosjekter.",
+            "Et verktøy som brukes slik at man kan styre prosjekter i riktig retning, bort fra risikofaktorene."
+        ]
+    },
+    {
+        "category": 10,
+        "questionText": "Hvilke fire grunnleggende prosesser kan risikostyringsprosessen deles i?",
+        "correctAnswers": [
+            "Risikoidentifikasjon, risikovurdering, risiko- og responsplanlegging & riskoovervåkning og kontroll."
+        ],
+        "wrongAnswers": [
+            "Risikoidentifikasjon, risikovurdering, risikodemping, risikoovervåkning og risikokontroll.",
+            "Risikostyring, risikomarkering, risikohåndtering og risikovurdering.",
+            "Det er egentlig kun en prosess, dette er risikostyring."
+        ]
+    },
+    {
+        "category": 10,
+        "questionText": "Hvilke av utsagnene under er eksempler på utfordringer med en risk management-prosess?",
+        "correctAnswers": [
+            "Alle alternativ er riktige."
+        ],
+        "wrongAnswers": [
+            "Ingen av alternativene.",
+            "Mangel på strukturerte metoder for å identifisere potensielle risikofaktorer.",
+            "Beslutninger er i stor grad basert på subjektive eller forenklede vurderinger og tar ikke hensyn til prosjektets kontekst, målbilde og begrensninger.",
+            "For mye ressurser blir brukt på å definere og diskutere risikofaktorer i prosjekter, men denne prosessen blir ikke tatt videre for å kartlegge eller implementere gode tiltak."
+        ]
+    },
+    {
+        "category": 10,
+        "questionText": "Hvilke fire hovedkategorier kan typiske risikofaktorer i prosjekter deles inn i?",
+        "correctAnswers": [
+            "Produkt, mennesker, organisatorisk og omgivelser."
+        ],
+        "wrongAnswers": [
+            "Produkt, mennesker, interessenter og omgivelser.",
+            "Produkt, mennesker, interne faktorer og eksterne faktorer."
+        ]
+    },
+    {
+        "category": 10,
+        "questionText": "Hva er et risikohåndteringstiltak ved menneskeskelige faktorer?",
+        "correctAnswers": [
+            "Legge til rette for opplæring og utvikling."
+        ],
+        "wrongAnswers": [
+            "Spre kunnskap og informasjon.",
+            "Ha back-up eller parallelle løsninger.",
+            "Undersøkelser."
+        ]
+    }
 ]
