@@ -88,7 +88,7 @@ export const Quiz = () => {
                 correctQuestions: progress.correctQuestions += 1,
                 answered: true,
             })
-            setAnswerText(`Riktig! Riktig(e) svar er ${currentQuestion.correct}`)
+            setAnswerText(`Riktig! Riktig svar er: ${currentQuestion.correct}`)
         }
         if (event.target.value !== "correct") {
             setProgress({
@@ -97,7 +97,7 @@ export const Quiz = () => {
                 wrongQuestions: progress.wrongQuestions += 1,
                 answered: true,
             })
-            setAnswerText(`Feil! Riktig(e) svar ville vært ${currentQuestion.correct}`)
+            setAnswerText(`Feil! Riktig svar ville vært ${currentQuestion.correct}`)
         }
     }
 
