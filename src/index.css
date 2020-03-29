@@ -3,10 +3,6 @@
   text-align: center;
 }
 
-h1 {
-  font-size: 3rem;
-}
-
 html, body {
   margin: 0;
   padding: 0;
@@ -14,8 +10,7 @@ html, body {
 }
 
 article {
-  width: calc(100vw-20px);
-  padding: 20px;
+  width: 95%;
 }
 
 #root {
@@ -95,11 +90,11 @@ select {
 
 .alternativeButton, .nextButton, select {
   min-height: 4rem;
-  padding: 1rem 5rem;
+  width: 80%;
+  padding: 1rem;
   background-color: black;
   color: white;
   font-size: 1rem;
-  width: 95vw;
   text-align: center;
   margin-bottom: 1rem;
   border-radius: 3rem;

@@ -297,7 +297,7 @@
         ]
     },
     {
-        "category": 7,
+        "category": 8,
         "questionText": "Hvilket av alternativene er IKKE en av organisasjonsstrukturene i et prosjekt-perspektiv?",
         "correctAnswers": [
             "Lineærstruktur."
@@ -309,7 +309,7 @@
         ]
     },
     {
-        "category": 7,
+        "category": 8,
         "questionText": "Hvem er beslutningstaker i en funksjonellstruktur?",
         "correctAnswers": [
             "Linjeledelsen."
@@ -321,7 +321,7 @@
         ]
     },
     {
-        "category": 7,
+        "category": 8,
         "questionText": "Hvilke av de følgende alternativene er IKKE en faktor som avgjør hvordan en organisasjon skal struktureres?",
         "correctAnswers": [
             "Nærhet til hovedkvarter."
@@ -334,7 +334,7 @@
         ]
     },
     {
-        "category": 7,
+        "category": 8,
         "questionText": "Hvilke 3 underkategorier finnes i en matrisestruktur?",
         "correctAnswers": [
             "Svak, sterk og balansert matrise."
@@ -346,7 +346,7 @@
         ]
     },
     {
-        "category": 7,
+        "category": 8,
         "questionText": "Hva kjennetegner IKKE en prosjektstruktur?",
         "correctAnswers": [
             "Lavere kostnader."
@@ -358,7 +358,7 @@
         ]
     },
     {
-        "category": 7,
+        "category": 8,
         "questionText": "Hva kjennetegner en matrisestruktur?",
         "correctAnswers": [
             "Medarbeidere i en organisasjon deltar i flere aktiviteter eller områder etter behov."
@@ -370,7 +370,7 @@
         ]
     },
     {
-        "category": 8,
+        "category": 9,
         "questionText": "Hva omfatter prosjektplanlegging?",
         "correctAnswers": [
             "Oppgaver og aktiviteter som dokumenterer og illustrer hvordan prosjektets resultat skal utformes og leveres."
@@ -382,7 +382,7 @@
         ]
     },
     {
-        "category": 8,
+        "category": 9,
         "questionText": "Er påstanden rikitg eller feil? «Prosjektplanen burde bli detaljert planlagt før prosjektstart, og til best mulig evne bli fulgt og ikke endret på».",
         "correctAnswers": [
             "Feil"
@@ -392,7 +392,7 @@
         ]
     },
     {
-        "category": 8,
+        "category": 9,
         "questionText": "Hva kan en analyse av AON-nettverket gi?",
         "correctAnswers": [
             "Gi svar på hvor lang tid det vil ta å fullføre hele prosjeket."
@@ -404,7 +404,7 @@
         ]
     },
     {
-        "category": 8,
+        "category": 9,
         "questionText": "Hvilket planleggingsverktøy kan brukes for å visualisere ressursbehov for et prosjekt over tid?",
         "correctAnswers": [
             "Ressursdiagram"
@@ -416,7 +416,7 @@
         ]
     },
     {
-        "category": 8,
+        "category": 9,
         "questionText": "Hvilket planleggingsverktøy brukes for å bryte ned et prosjekt i arbeidspakker, belyser hvem som er ansvarlig, og hvilke som må gjøres til hvilken tid?",
         "correctAnswers": [
             "Prosjektnedbrytningsstruktur (PBS)"
@@ -428,7 +428,7 @@
         ]
     },
     {
-        "category": 9,
+        "category": 10,
         "questionText": "I pensum har vi et begrep kalt PV, hva står dette for?",
         "correctAnswers": [
             "Planned Value, som et estimat på planlagt akkumulerte kostnader."
@@ -439,7 +439,7 @@
         ]
     },
     {
-        "category": 9,
+        "category": 10,
         "questionText": "Hva er AC?",
         "correctAnswers": [
             "AC står for actual costs, og angir akkumulerte påløpte kostnader (eller timer)."
@@ -451,7 +451,7 @@
         ]
     },
     {
-        "category": 9,
+        "category": 10,
         "questionText": "Hvordan beregner man SPI?",
         "correctAnswers": [
             "SPI=EV/PV"
@@ -463,7 +463,7 @@
         ]
     },
     {
-        "category": 9,
+        "category": 10,
         "questionText": "Hva er SPI?",
         "correctAnswers": [
             "SPI, står for Scheduell Performance Index og gir indikasjon for hvordan prosjektet ligger an i forhold til tidsplan."
@@ -474,7 +474,7 @@
         ]
     },
     {
-        "category": 9,
+        "category": 10,
         "questionText": "Hvorfor er det viktig og beregne inntjent verdi for fremdrift i prosjekter?",
         "correctAnswers": [
             "Fordi sammenligning mellom påløpte kostnader og planlagte kostnader, ikke gir tilstrekkelig grunnlag for evaluering av fremdrift i prosjekter."
@@ -486,7 +486,7 @@
         ]
     },
     {
-        "category": 10,
+        "category": 11,
         "questionText": "Hvordan definerer Pinto risk management-prosessen i kapittel 11?",
         "correctAnswers": [
             "Kunsten og vitenskapen å identifisere, analysere og håndtere risikofaktorer gjennom hele livsløpet til et prosjekt for å nå sine mål."
@@ -498,7 +498,7 @@
         ]
     },
     {
-        "category": 10,
+        "category": 11,
         "questionText": "Hvilke fire grunnleggende prosesser kan risikostyringsprosessen deles i?",
         "correctAnswers": [
             "Risikoidentifikasjon, risikovurdering, risiko- og responsplanlegging & riskoovervåkning og kontroll."
@@ -510,7 +510,7 @@
         ]
     },
     {
-        "category": 10,
+        "category": 11,
         "questionText": "Hvilke av utsagnene under er eksempler på utfordringer med en risk management-prosess?",
         "correctAnswers": [
             "Alle alternativ er riktige."
@@ -523,7 +523,7 @@
         ]
     },
     {
-        "category": 10,
+        "category": 11,
         "questionText": "Hvilke fire hovedkategorier kan typiske risikofaktorer i prosjekter deles inn i?",
         "correctAnswers": [
             "Produkt, mennesker, organisatorisk og omgivelser."
@@ -534,7 +534,7 @@
         ]
     },
     {
-        "category": 10,
+        "category": 11,
         "questionText": "Hva er et risikohåndteringstiltak ved menneskeskelige faktorer?",
         "correctAnswers": [
             "Legge til rette for opplæring og utvikling."
