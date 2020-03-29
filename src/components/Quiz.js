@@ -44,7 +44,8 @@ export const Quiz = () => {
         6: "Suksess",
         8: "Prosjektorganisering",
         9: "Prosjektplanlegging",
-        10: "Inntjent verdi (EV)"
+        10: "Inntjent verdi (EV)",
+        11: "Risk management-prosess"
     }
 
     const handleCategoryChange = event => {
