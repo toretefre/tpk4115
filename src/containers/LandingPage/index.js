@@ -11,7 +11,7 @@ export const LandingPage = () => {
             <p>
                 Nettsiden er laget av studenter, for studenter. Den skal
                 fungere som et supplerende læringsverktøy for eksamensforberedelser
-                i faget Praktisk Prosjektelse.
+                i faget Praktisk Prosjektledelse.
             </p>
 
             <p>
